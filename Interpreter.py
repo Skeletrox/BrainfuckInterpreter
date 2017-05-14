@@ -31,7 +31,7 @@ with open(fileName) as f:
         elif c == '.':
             print (chr(memoryCells[memoryPointer]), end='')
         elif c == ',':
-            memoryCells[memoryPointer] = input('')
+            memoryCells[memoryPointer] = ord(input(''))
         elif c == '[':
             loopLocation = charsRead + 1
             loopLocations.append(loopLocation)
